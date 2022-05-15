@@ -8,7 +8,9 @@ import 'page/share_page.dart';
 import 'page/ticket_page.dart';
 
 class RootPage extends StatelessWidget {
-  RootPage({Key? key}) : super(key: key);
+  RootPage({Key? key, required this.i}) : super(key: key);
+
+  final int i;
 
   final pages = [
     HomePage(),
@@ -18,10 +20,11 @@ class RootPage extends StatelessWidget {
     const SharePage()
   ];
 
+  final index = 0.obs;
+
   @override
   Widget build(BuildContext context) {
-    var index = 0.obs;
-
+    index.value = i;
     return Scaffold(
       // extendBody: true,
       bottomNavigationBar: NavigationBarTheme(

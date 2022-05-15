@@ -1,6 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:movie_finder/view/page/movie_detail_page.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -41,7 +43,7 @@ class HomePage extends StatelessWidget {
           children: [
             // top screen
             Padding(
-              padding: const EdgeInsets.only(left: 25, right: 25, top: 20),
+              padding: const EdgeInsets.only(left: 25, right: 25, top: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -171,21 +173,26 @@ class HomePage extends StatelessWidget {
               ),
               itemCount: imagesurl.length,
               itemBuilder: (_, index, realIndex) {
-                return Container(
-                  width: MediaQuery.of(context).size.width * 0.8,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: NetworkImage(
-                        imagesurl[index],
+                return InkWell(
+                  onTap: () {
+                    Get.to(const MovieDetailsPage());
+                  },
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.8,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        fit: BoxFit.fill,
+                        image: NetworkImage(
+                          imagesurl[index],
+                        ),
                       ),
-                    ),
-                    borderRadius: BorderRadius.circular(25),
-                    gradient: const LinearGradient(
-                      colors: [
-                        Color(0x00121212),
-                        Color(0xff121212),
-                      ],
+                      borderRadius: BorderRadius.circular(25),
+                      gradient: const LinearGradient(
+                        colors: [
+                          Color(0x00121212),
+                          Color(0xff121212),
+                        ],
+                      ),
                     ),
                   ),
                 );
@@ -199,7 +206,7 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: List.generate(
                 menuList.length,
-                (index) => MenuBtn(
+                (index) => MenuBtns(
                   title: '${menuList[index]['title']}',
                   icon: menuList[index]['icon'] as IconData,
                 ),
@@ -227,7 +234,8 @@ class HomePage extends StatelessWidget {
             ),
             CarouselSlider.builder(
               options: CarouselOptions(
-                height: 170,
+                height: 230,
+                viewportFraction: 0.55,
                 autoPlay: true,
                 enlargeCenterPage: true,
                 autoPlayInterval: const Duration(
@@ -240,7 +248,7 @@ class HomePage extends StatelessWidget {
               itemCount: imagesurl.length,
               itemBuilder: (_, index, realIndex) {
                 return Container(
-                  width: MediaQuery.of(context).size.width * 0.8,
+                  width: MediaQuery.of(context).size.width * 0.5,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       fit: BoxFit.fill,
@@ -269,15 +277,15 @@ class HomePage extends StatelessWidget {
   }
 }
 
-class MenuBtn extends StatelessWidget {
-  MenuBtn({
+class MenuBtns extends StatelessWidget {
+  const MenuBtns({
     required this.title,
     required this.icon,
     Key? key,
   }) : super(key: key);
 
-  String title;
-  IconData icon;
+  final String title;
+  final IconData icon;
 
   @override
   Widget build(BuildContext context) {
