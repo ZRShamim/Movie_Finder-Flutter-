@@ -7,6 +7,10 @@ Home Page
 
 <img src="https://raw.githubusercontent.com/ZRShamim/Movie_Finder-Flutter-/main/assets/project_progress/279225706_552121216268632_8462016636129319895_n.png" width=270 >
 
+Movie Detail Page
+
+<img src="https://raw.githubusercontent.com/ZRShamim/Movie_Finder-Flutter-/main/assets/project_progress/280654967_1984518965082018_8662307702767337035_n.png" width=270 >
+
 #Project pages 
 ```
 Home Page - Done
