@@ -13,7 +13,8 @@ Movie Detail Page
 
 #Project pages 
 ```
-Home Page - Done
+Home Page - Done {Designing}
+Movie Detail Page - Done {Designing}
 Favorite Page - Ongoing
 Account Page - Ongoing
 .
