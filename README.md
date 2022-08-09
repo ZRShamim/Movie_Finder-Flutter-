@@ -24,7 +24,7 @@ Account Page - Ongoing
 More will be added in future
 ```
 
-#Design Idea
+# Design Idea
 https://www.figma.com/file/znQc5wCXeO2cbCVBEn32gZ/Movie-Finder-App-Figma-Design?node-id=18%3A1779
 
 #Youtube channels or Udemy courses or others that help me to grow
