@@ -27,7 +27,7 @@ More will be added in future
 # Design Idea
 https://www.figma.com/file/znQc5wCXeO2cbCVBEn32gZ/Movie-Finder-App-Figma-Design?node-id=18%3A1779
 
-#Youtube channels or Udemy courses or others that help me to grow
+## Youtube channels or Udemy courses or others that help me to grow
 ```
 https://www.youtube.com/c/JohannesMilke
 https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/
