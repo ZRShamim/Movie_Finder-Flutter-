@@ -7,9 +7,14 @@ Home Page
 
 <img src="https://raw.githubusercontent.com/ZRShamim/Movie_Finder-Flutter-/main/assets/project_progress/279225706_552121216268632_8462016636129319895_n.png" width=270 >
 
+Movie Detail Page
+
+<img src="https://raw.githubusercontent.com/ZRShamim/Movie_Finder-Flutter-/main/assets/project_progress/280654967_1984518965082018_8662307702767337035_n.png" width=270 >
+
 #Project pages 
 ```
-Home Page - Done
+Home Page - Done {Designing}
+Movie Detail Page - Done {Designing}
 Favorite Page - Ongoing
 Account Page - Ongoing
 .
@@ -19,10 +24,10 @@ Account Page - Ongoing
 More will be added in future
 ```
 
-#Design Idea
+# Design Idea
 https://www.figma.com/file/znQc5wCXeO2cbCVBEn32gZ/Movie-Finder-App-Figma-Design?node-id=18%3A1779
 
-#Youtube channels or Udemy courses or others that help me to grow
+## Youtube channels or Udemy courses or others that help me to grow
 ```
 https://www.youtube.com/c/JohannesMilke
 https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/
