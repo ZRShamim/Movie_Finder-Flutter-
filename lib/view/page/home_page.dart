@@ -175,7 +175,7 @@ class HomePage extends StatelessWidget {
               itemBuilder: (_, index, realIndex) {
                 return InkWell(
                   onTap: () {
-                    Get.to(const MovieDetailsPage());
+                    Get.to(() => MovieDetailsPage());
                   },
                   child: Container(
                     width: MediaQuery.of(context).size.width * 0.8,

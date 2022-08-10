@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:movie_finder/test_file.dart';
 
 import 'view/root_page.dart';
 
@@ -17,9 +18,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: RootPage(
-        i: 0,
-      ),
+      // home: RootPage(
+      //   i: 0,
+      // ),
+      home: RootPage(i: 0),
     );
   }
 }
